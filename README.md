@@ -35,3 +35,8 @@ L'ensemble des dépendances nécessaires sont téléchargées lors de l'exécuti
 cd toolbox_project
 python main.py
 ```
+
+## Utilisation
+
+- Utilisez le menu déroulant pour accéder aux différentes fonctionnalités : Nmap, Bruteforce SSH, Générateur de Mots de Passe, Exfiltration de Données, Website Copier.
+- Renseignez les informations nécessaires dans les champs de chaque page et cliquez sur les boutons correspondants pour lancer les tests ou générer les rapports.
