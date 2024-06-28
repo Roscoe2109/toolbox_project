@@ -5,11 +5,11 @@ Le projet Toolbox Hacking est une application développé dans le cadre mon proj
 
 ## Fonctionnalités
 
-Scan de Ports (Nmap): Détecte les ports ouverts sur un réseau ou un ordinateur afin d'identifier les services disponibles et potentiellement vulnérables
-Bruteforce SSH: Réalise une attaque visant à deviner les identifiants de connexion SSH via de nombreuses combinaisons stockées dans un dictionnaire
-Générateur de Mots de Passe: Outil pour créer des mots de passe aléatoires et sécurisés
-Exfiltration de Données: Attaque visant à extraire des données sensibles ou confidentielles d’un système vers un emplacement externe
-Website Copier: Outil qui permet le téléchargement et la copie du contenu d'un site web entier pour une utilisation hors ligne ou pour l'analyser
+- Scan de Ports (Nmap): Détecte les ports ouverts sur un réseau ou un ordinateur afin d'identifier les services disponibles et potentiellement vulnérables
+- Bruteforce SSH: Réalise une attaque visant à deviner les identifiants de connexion SSH via de nombreuses combinaisons stockées dans un dictionnaire
+- Générateur de Mots de Passe: Outil pour créer des mots de passe aléatoires et sécurisés
+- Exfiltration de Données: Attaque visant à extraire des données sensibles ou confidentielles d’un système vers un emplacement externe
+- Website Copier: Outil qui permet le téléchargement et la copie du contenu d'un site web entier pour une utilisation hors ligne ou pour l'analyser
 
 ## Technologies Utilisées
 
