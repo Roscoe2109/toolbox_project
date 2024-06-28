@@ -10,13 +10,11 @@ def create_generator_frame(app):
     generator_label = ctk.CTkLabel(generator_frame, text="Générateur de Mots de Passe", font=("Helvetica", 20), text_color="black")
     generator_label.pack(pady=20)
 
-    # Nombre de caractères
     length_label = ctk.CTkLabel(generator_frame, text="Nombre de caractères :", font=("Helvetica", 14), text_color="black")
     length_label.pack(pady=(20, 5))
     password_length_entry = ctk.CTkEntry(generator_frame, width=50)
     password_length_entry.pack(pady=5)
 
-    # Options de génération
     use_uppercase = ctk.CTkCheckBox(generator_frame, text="Majuscules", text_color="black")
     use_uppercase.pack(pady=5)
     use_lowercase = ctk.CTkCheckBox(generator_frame, text="Minuscules", text_color="black")
@@ -26,20 +24,16 @@ def create_generator_frame(app):
     use_digits = ctk.CTkCheckBox(generator_frame, text="Chiffres", text_color="black")
     use_digits.pack(pady=5)
 
-    # Bouton de génération
     generate_button = ctk.CTkButton(generator_frame, text="Générer", command=generate_password)
     generate_button.pack(pady=20)
 
-    # Zone d'affichage du mot de passe généré
     password_display = ctk.CTkEntry(generator_frame, width=300)
     password_display.pack(pady=10)
     password_display.configure(state="readonly")
 
-    # Bouton d'effacement de l'historique
     clear_button = ctk.CTkButton(generator_frame, text="Effacer", command=clear_history)
     clear_button.pack(pady=10)
 
-    # Zone d'affichage pour l'historique
     history_label = ctk.CTkLabel(generator_frame, text="Historique des mots de passe générés :", font=("Helvetica", 14), text_color="black")
     history_label.pack(pady=(20, 5))
     history_textbox = scrolledtext.ScrolledText(generator_frame, width=80, height=10, wrap="word")

@@ -9,11 +9,9 @@ from exfiltration_page import save_exfiltration_as_pdf
 from generator_page import save_generator_as_pdf
 from website_copier_page import save_website_copier_as_pdf
 
-# Fonction pour installer un package
 def install_package(package):
     subprocess.check_call([sys.executable, "-m", "pip", "install", package])
 
-# Fonction pour générer le rapport global
 def generate_global_report():
     nmap_pdf = "nmap_report.pdf"
     bruteforce_pdf = "bruteforce_report.pdf"
