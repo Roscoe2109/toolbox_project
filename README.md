@@ -28,6 +28,28 @@ Le projet Toolbox Hacking est une application développé dans le cadre mon proj
 git clone https://github.com/Roscoe2109/toolbox_project.git
 ```
 
+### Installation de nmap sur Windows
+Pour utiliser toutes les fonctionnalités de cette toolbox, vous devez avoir nmap installé sur votre système Windows.
+
+### Télécharger nmap :
+
+Rendez-vous sur le site officiel de nmap : Nmap Download.
+Téléchargez l'installeur pour Windows (nmap-setup.exe).
+
+### Installer nmap :
+
+Exécutez le fichier téléchargé (nmap-setup.exe).
+Suivez les instructions à l'écran pour installer nmap. Acceptez les paramètres par défaut, y compris le répertoire d'installation (C:\Program Files (x86)\Nmap).
+
+### Ajouter nmap au PATH du système :
+
+- Cliquez avec le bouton droit sur Ce PC ou Poste de travail et sélectionnez Propriétés.
+- Cliquez sur Paramètres système avancés dans le panneau de gauche.
+- Cliquez sur le bouton Variables d'environnement en bas de la fenêtre.
+- Dans la section Variables système, trouvez la variable Path, sélectionnez-la et cliquez sur Modifier.
+- Cliquez sur Nouveau et ajoutez le chemin suivant : C:\Program Files (x86)\Nmap.
+- Cliquez sur OK pour fermer toutes les fenêtres et appliquer les changements.
+
 ### Exécuter le projet :
 
 L'ensemble des dépendances nécessaires sont téléchargées lors de l'exécution du script : 
