@@ -13,12 +13,12 @@ Website Copier: Outil qui permet le téléchargement et la copie du contenu d'un
 
 ## Technologies Utilisées
 
-Langage de Programmation: Python
-Interface Utilisateur: CustomTkinter
-Connexions SSH: Paramiko
-Website Copier: PyWebCopy
-Génération de Rapports: FPDF
-Fusion de PDF: PyPDF2
+- Langage de Programmation: Python
+- Interface Utilisateur: CustomTkinter
+- Connexions SSH: Paramiko
+- Website Copier: PyWebCopy
+- Génération de Rapports: FPDF
+- Fusion de PDF: PyPDF2
 
 ## Installation du projet
 
