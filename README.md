@@ -30,6 +30,7 @@ git clone https://github.com/Roscoe2109/toolbox_project.git
 
 ### Exécuter le projet :
 
+L'ensemble des dépendances nécessaires sont téléchargées lors de l'exécution du script : 
 ```
 cd toolbox_project
 python main.py
