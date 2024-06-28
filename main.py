@@ -1,30 +1,21 @@
 import subprocess
 import sys
-
-def install_package(package):
-    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
-
-required_packages = [
-    "customtkinter", "paramiko", "pywebcopy", "fpdf", "pypdf2"
-]
-
-for package in required_packages:
-    try:
-        __import__(package)
-    except ImportError:
-        install_package(package)
-
 import os
 import tkinter as tk
 from tkinter import scrolledtext, filedialog, messagebox
 import customtkinter as ctk
 
-from nmap_page import create_nmap_frame, run_nmap, save_as_pdf
+from nmap_page import create_nmap_frame, run_nmap_scan, save_as_pdf as save_nmap_as_pdf
 from bruteforce_ssh_page import create_bruteforce_frame, run_bruteforce, save_bruteforce_as_pdf
-from generator_page import create_generator_frame, generate_password, clear_history, save_generator_as_pdf
+from generator_page import create_generator_frame, generate_password, clear_history
 from exfiltration_page import create_exfiltration_frame, run_exfiltration, save_exfiltration_as_pdf
 from website_copier_page import create_website_copier_frame, run_website_copier, save_website_copier_as_pdf
-from utils import generate_global_report
+from utils import install_package, generate_global_report
+
+
+dependencies = ["customtkinter", "paramiko", "fpdf", "PyPDF2", "pywebcopy"]
+for package in dependencies:
+    install_package(package)
 
 app = ctk.CTk()
 app.attributes("-fullscreen", False)
@@ -84,7 +75,7 @@ def show_frame(frame):
     current_frame = frame
 
 burger_button = ctk.CTkButton(app, text="☰", command=toggle_menu, width=30)
-burger_button.pack(side="left", anchor="nw", padx=(10, 10), pady=10)
+burger_button.pack(side="left", anchor="nw", padx=(10, 10), pady=10)  # Ajout d'un espace entre le bouton menu et le bouton accueil
 
 home_button = ctk.CTkButton(app, text="Accueil", command=show_home, width=60)
 home_button.pack(side="left", anchor="nw", padx=(0, 10), pady=10)
